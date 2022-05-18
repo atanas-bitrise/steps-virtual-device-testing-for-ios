@@ -230,9 +230,7 @@ func main() {
 			TestTimeout: fmt.Sprintf("%ss", timeout),
 		}
 
-		testModel.TestSpecification.IosXcTest = &testing.IosXcTest{
-			// XcodeVersion: "13.3.1",
-		}
+		testModel.TestSpecification.IosXcTest = &testing.IosXcTest{}
 
 		jsonByte, err := json.Marshal(testModel)
 		if err != nil {
