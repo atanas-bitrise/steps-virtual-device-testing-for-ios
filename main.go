@@ -231,7 +231,7 @@ func main() {
 		}
 
 		testModel.TestSpecification.IosXcTest = &testing.IosXcTest{
-			XcodeVersion: "13.3.1",
+			XcodeVersion: fmt.Sprintf("13.3.1"),
 		}
 
 		jsonByte, err := json.Marshal(testModel)
